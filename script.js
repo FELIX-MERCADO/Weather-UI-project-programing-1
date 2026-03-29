@@ -37,3 +37,43 @@ Saturday.addEventListener("click", () => {
 Sunday.addEventListener("click", () => {
     image.src = 'weather/perfect.jpg';
 });
+
+
+
+const tome = document.getElementById("tome");
+
+
+const today = new Date();
+
+const year = today.getFullYear();
+const day = today.getDate();
+const month = today.getMonth();
+let mont = "january";
+
+if (month === 0) {
+    mont = "January";
+} else if (month === 1) {
+    mont = "February";
+} else if (month === 2) {
+    mont = "March";
+} else if (month === 3) {
+    mont = "April";
+} else if (month === 4) {
+    mont = "May";
+} else if (month === 5) {
+    mont = "June";
+} else if (month === 6) {
+    mont = "July";
+} else if (month === 7) {
+    mont = "August";
+} else if (month === 8) {
+    mont = "September";
+} else if (month === 9) {
+    mont = "October";
+} else if (month === 10) {
+    mont = "November";
+} else if (month === 11) {
+    mont = "December";
+}
+
+tome.innerHTML = mont + " " + day + " " + year;
