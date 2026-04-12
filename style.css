@@ -71,3 +71,49 @@
             right: 0;
             margin: 30px;
         }
+
+        a {
+            transition-duration: 0.4;
+            scale: 1;
+        }
+
+        
+    a {
+        color: black;
+        text-decoration: none;
+        transition-duration: 0.2s;
+    }
+
+    a:visited {
+        color: black;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: black;
+        text-decoration: none;
+        scale: 1.2;
+        transition-duration: 0.2s;
+    }
+
+    a:active {
+        color: black;
+        text-decoration: none;
+    }
+
+    #b {
+        position: absolute;
+        margin: 30px;
+        font-size: 40px;
+        text-decoration: none;
+        color: black;
+        padding: 20px;
+        border-radius: 30px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #b:hover {
+        scale: 1.2;
+        transition-duration: 0.2s;
+    }

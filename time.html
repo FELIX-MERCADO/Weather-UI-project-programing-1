@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>time</title>
+    <script defer>
+        setInterval(() => {
+            const time = new Date();
+
+            const hour = time.getHours();
+            const minutes = time.getMinutes();
+            const seconds = time.getSeconds();
+
+            document.getElementById("time").innerHTML = hour + ":" + minutes + ":" + seconds;
+        }, 1000);
+
+
+    </script>
+</head>
+    <style>
+        body {
+            background-color: rgb(131, 131, 131);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        h1 {
+            color: black;
+            background-color: white;
+            font-size: 300px;
+            text-align: center;
+            border-radius: 20px;
+            margin-left: 80px;
+            margin-right: 80px;
+            margin-top: 1px;
+        }
+
+        h3 {
+            font-size: 100px;
+            margin-top: 30px;
+        }
+
+        main {
+            justify-content: center;
+            text-align: center;
+        }
+
+        a {
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: 30px;
+            font-size: 40px;
+            text-decoration: none;
+            color: black;
+            background-color: white;
+            padding: 20px;
+            border-radius: 30px;
+        }
+
+        a:hover {
+            scale: 1.2;
+            transition-duration: 0.2s;
+        }
+
+    </style>
+
+<body>
+
+    <main>
+        <a href="index.html">Back</a>
+        <h3>Time</h3>
+        <h1 id="time">00:00:00</h1>
+
+    </main>
+</body>
+</html>
